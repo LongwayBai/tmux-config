@@ -2,29 +2,38 @@
 
 English | [简体中文](README.md)
 
-![demo](https://private-user-images.githubusercontent.com/254935088/549780110-0df9b9da-959b-4f05-b6a4-d04f0243ae10.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzEwNDMyNzQsIm5iZiI6MTc3MTA0Mjk3NCwicGF0aCI6Ii8yNTQ5MzUwODgvNTQ5NzgwMTEwLTBkZjliOWRhLTk1OWItNGYwNS1iNmE0LWQwNGYwMjQzYWUxMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMjE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDIxNFQwNDIyNTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00OWExZThmMDUyNDgzODEwODczYTAzNjg3OWU0YzBiZDk1Nzc5OTc1NjQ1YTVlMmM4MmJkZTZjOGI3ODg4YzRjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.eEs3u4Z5nQiiZ0cUVuQrQu1LjR4WfBBT_GCeDt-iRKM)
+Tmux configuration for daily development and remote sessions, with a Catppuccin Frappe theme, `Ctrl+a` prefix, TPM-managed plugins, and enhanced clipboard integration.
 
-![video](https://private-user-images.githubusercontent.com/254935088/549780297-138e4c95-7b3e-4846-92c5-2d086e225fd2.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzEwNDMyNzQsIm5iZiI6MTc3MTA0Mjk3NCwicGF0aCI6Ii8yNTQ5MzUwODgvNTQ5NzgwMjk3LTEzOGU0Yzk1LTdiM2UtNDg0Ni05MmM1LTJkMDg2ZTIyNWZkMi5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMjE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDIxNFQwNDIyNTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zMmI3OTExNjkxZjBmYThiMjliZTdiZDE0YWYyODZmNDFlOTIzZWVjNTc4YTFiOTdhNzY1YmI3YWUyN2ZiNzU0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.B25DbGdFUQRm9cQOHJixNDQFZKzMkuoyjacSuwUd6f8)
+> Companion documentation: installation, onboarding, and keymap reference are published at <https://longwaybai.github.io/docs/tmux/>.
 
-A feature-rich tmux configuration with beautiful Catppuccin theme, smart key bindings, and useful plugins.
+![tmux preview](https://longwaybai.github.io/assets/images/cover-effect-a3e41d734805fcbb90bfebec1d8764fe.png)
+
+![tmux workflow demo](https://longwaybai.github.io/assets/images/minimal-closed-loop-e694ba4e16466fc16951986b5720be23.gif)
 
 ## ✨ Features
 
-- 🎨 Beautiful Catppuccin Frappe theme
-- ⌨️  Intuitive key bindings optimized for productivity
-- 🖱️  Mouse support enabled
-- 📋 Enhanced clipboard integration with OSC52 support
-- 🔌 Powerful plugins (TPM, tmux-cpu, tmux-battery, tmux-floax)
-- 🚀 Fast and responsive configuration
+- Catppuccin Frappe theme with an enhanced status bar
+- Prefix key changed from `Ctrl+b` to `Ctrl+a`
+- Mouse support, Vi-style copy mode, and OSC52 clipboard integration
+- TPM-managed plugins: `tmux-cpu`, `tmux-battery`, `tmux-floax`, and `catppuccin/tmux`
+- Remote-session config and helper scripts for local and SSH-based workflows
+
+## 📚 Companion Documentation
+
+This repository is the configuration source for the published tmux documentation set:
+
+- [Tmux Guide](https://longwaybai.github.io/docs/tmux/)
+- [Installation and Initial Setup](https://longwaybai.github.io/docs/tmux/installation)
+- [Keymap Reference](https://longwaybai.github.io/docs/tmux/keymaps)
+
+The README focuses on repository usage and configuration details. For conceptual explanations, onboarding flow, and walkthrough-style examples, use the companion documentation above.
 
 ## 📋 Requirements
 
-- **tmux**: Version 3.2 or higher (recommended: 3.3)
-- **Git**: For cloning the repository and TPM installation
-- **Shell**: Bash, Zsh, or compatible shell
-- **Optional**: `reattach-to-user-namespace` for macOS clipboard support
-
-### Check your tmux version
+- **tmux**: 3.2 or later, 3.3+ recommended
+- **Git**: required for cloning the repository and TPM installation
+- **Shell**: Bash, Zsh, or a compatible shell
+- **Optional**: `reattach-to-user-namespace` for improved macOS clipboard behavior
 
 ```bash
 tmux -V
@@ -34,219 +43,166 @@ tmux -V
 
 ### Quick Install
 
-Run the automated installation script:
-
 ```bash
 git clone https://github.com/LongwayBai/tmux-config.git
 cd tmux-config
 ./install.sh
 ```
 
-### What the installer does:
+`install.sh` performs the following steps:
 
-1. Checks if tmux is installed
-2. Installs TPM (Tmux Plugin Manager) if not present
-3. Backs up your existing `~/.tmux.conf` to `~/.tmux.conf.bak`
-4. Copies configuration files to `~/.tmux/`
-5. Creates a symbolic link from `~/.tmux.conf` to `~/.tmux/tmux.conf`
-6. Installs all TPM plugins automatically
+1. Verifies that `tmux` is installed.
+2. Installs TPM when it is missing from the default location.
+3. Backs up an existing `~/.tmux.conf` to `~/.tmux.conf.bak`.
+4. Copies the repository `tmux/` directory into `~/.tmux/`.
+5. Creates the `~/.tmux.conf -> ~/.tmux/tmux.conf` symlink.
+6. Starts a temporary `__noop` session to run TPM plugin installation, then removes that session.
 
-### Manual Installation
+### Manual Install
 
 ```bash
-# Clone the repository
 git clone https://github.com/LongwayBai/tmux-config.git
 cd tmux-config
 
-# Backup existing configuration
 cp ~/.tmux.conf ~/.tmux.conf.bak 2>/dev/null || true
-
-# Copy tmux configuration
 cp -a ./tmux/. ~/.tmux/
-
-# Create symbolic link
 ln -sf ~/.tmux/tmux.conf ~/.tmux.conf
-
-# Install TPM
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-# Start tmux and install plugins
-tmux new -s setup
-# Press: Ctrl+a then Shift+I (capital I) to install plugins
 ```
 
-## ⌨️ Key Bindings
+After entering tmux, run `Ctrl+a Shift+I` to install plugins.
 
-### Prefix Key
+## ⚡ Minimal First Steps
 
-The prefix key is changed from `Ctrl+b` to `Ctrl+a` for easier access.
+If you are new to tmux, start with this minimum loop:
 
-### General Operations
+```bash
+tmux new -s demo
+tmux ls
+tmux attach -t demo
+tmux kill-session -t demo
+```
+
+- Detach from the current session: `Ctrl+a d`
+- Reload the configuration: `Ctrl+a Ctrl+r`
+- If plugins are missing, try first: `Ctrl+a Shift+I`
+
+## ⌨️ Common Key Bindings
+
+The unified prefix key is `Ctrl+a`.
+
+### Sessions and Windows
 
 | Key Binding | Description |
-|------------|-------------|
-| `Ctrl+a` | Prefix key |
-| `Ctrl+a c` | Create new window (prompts for name) |
-| `Ctrl+a d` | Detach from session |
-| `Ctrl+a D` | Detach other clients |
-| `Ctrl+a Ctrl+e` | Edit tmux.conf in editor |
-| `Ctrl+a Ctrl+r` | Reload configuration |
-| `Ctrl+a Ctrl+s` | Toggle status bar |
-
-### Window Management
-
-| Key Binding | Description |
-|------------|-------------|
-| `Ctrl+a c` | Create new window with name prompt |
-| `Ctrl+a r` | Rename current window |
-| `Ctrl+a R` | Rename current session |
+| --- | --- |
+| `Ctrl+a c` | Create a new window |
+| `Ctrl+a d` | Detach from the current session |
+| `Ctrl+a r` | Rename the current window |
+| `Ctrl+a R` | Rename the current session |
+| `Ctrl+a Ctrl+r` | Reload the configuration |
 | `Ctrl+a Ctrl+[` | Previous window |
 | `Ctrl+a Ctrl+]` | Next window |
-| `Ctrl+a Tab` | Last used window (MRU) |
-| `Ctrl+a X` | Kill current window |
-| `Ctrl+a Ctrl+x` | Kill all other windows |
-| `Ctrl+a L` | Link window from another session |
 
-### Pane Management
+### Panes
 
 | Key Binding | Description |
-|------------|-------------|
-| `Ctrl+a \|` | Split pane horizontally |
-| `Ctrl+a _` | Split pane vertically |
-| `Ctrl+a [` | Select previous pane |
-| `Ctrl+a ]` | Select next pane |
-| `Ctrl+a Ctrl+o` | Swap panes |
-| `Ctrl+a +` | Zoom/unzoom current pane |
-| `Ctrl+a x` | Kill current pane |
+| --- | --- |
+| `Ctrl+a \|` | Split left/right |
+| `Ctrl+a _` | Split top/bottom |
+| `Ctrl+a [` | Select the previous pane |
+| `Ctrl+a ]` | Select the next pane |
+| `Ctrl+a +` | Zoom / unzoom the current pane |
+| `Ctrl+a x` | Kill the current pane |
 
-### Copy Mode (Vi-style)
+### Copy Mode and Plugins
 
 | Key Binding | Description |
-|------------|-------------|
+| --- | --- |
 | `Alt+Up` | Enter copy mode |
 | `Ctrl+a p` | Paste buffer |
-| `Ctrl+a Ctrl+p` | Choose paste buffer |
-| `v` | Begin selection (in copy mode) |
-| `y` | Copy selection |
-| `Y` | Copy line |
-| `D` | Copy to end of line |
-| `Enter` | Copy selection and cancel |
-| `Alt+Up/Down` | Scroll up/down 1 line |
-| `Alt+PageUp/Down` | Scroll half page |
-| `PageUp/PageDown` | Scroll full page |
-
-### Session Management
-
-| Key Binding | Description |
-|------------|-------------|
-| `Ctrl+a Q` | Kill current session |
-| `Ctrl+a Ctrl+u` | Merge current session with another |
-
-## 🔌 Plugins
-
-This configuration uses the following plugins via TPM:
-
-- **[TPM](https://github.com/tmux-plugins/tpm)**: Tmux Plugin Manager
-- **[tmux-cpu](https://github.com/tmux-plugins/tmux-cpu)**: Display CPU and memory usage
-- **[tmux-battery](https://github.com/tmux-plugins/tmux-battery)**: Display battery status
-- **[tmux-floax](https://github.com/omerxx/tmux-floax)**: Floating panes support
-- **[catppuccin](https://github.com/catppuccin/tmux)**: Beautiful Catppuccin theme
-
-### Managing Plugins
-
-| Key Binding | Description |
-|------------|-------------|
+| `Ctrl+a Ctrl+p` | Choose a buffer and paste |
 | `Ctrl+a Shift+I` | Install plugins |
 | `Ctrl+a Shift+U` | Update plugins |
-| `Ctrl+a Alt+u` | Uninstall plugins not in list |
+| `Ctrl+a Alt+u` | Remove plugins no longer listed |
 
-## 🎨 Theme Customization
+Vi-style copy-mode keys such as `v`, `y`, `Y`, and `D` are available only inside copy mode.
 
-The configuration uses **Catppuccin Frappe** flavor. To change the theme, edit `~/.tmux/tmux.conf`:
+## 🔌 Plugins and Theme
+
+Plugins are managed through [TPM](https://github.com/tmux-plugins/tpm):
+
+- [tmux-plugins/tmux-cpu](https://github.com/tmux-plugins/tmux-cpu)
+- [tmux-plugins/tmux-battery](https://github.com/tmux-plugins/tmux-battery)
+- [omerxx/tmux-floax](https://github.com/omerxx/tmux-floax)
+- [catppuccin/tmux](https://github.com/catppuccin/tmux)
+
+The default theme flavor is **Catppuccin Frappe**. To change it:
 
 ```bash
 set -g @catppuccin_flavor "frappe"  # mocha | macchiato | frappe | latte
 ```
 
-## 🔧 Configuration
+Additional plugin-related settings already enabled in this repository include:
 
-### General Settings
+- `@floax-text-color 'white'`
+- `@floax-change-path 'false'`
 
-- **History limit**: 20,000 lines
-- **Escape time**: 0ms (no delay)
-- **Mouse support**: Enabled
-- **Base index**: Windows and panes start at 1
-- **Terminal**: True color (24-bit) support
-- **Default shell**: Uses your system's default shell
+## 🧩 Repository Layout
 
-### Status Bar
+```text
+tmux-config/
+├── tmux/
+│   ├── tmux.conf
+│   ├── tmux.remote.conf
+│   ├── yank.sh
+│   └── renew_env.sh
+├── install.sh
+├── README.md
+├── README_EN.md
+└── LICENSE
+```
 
-The status bar displays:
-- **Left**: Session name
-- **Right**: Application, directory, CPU usage, hostname (if SSH), uptime, battery
+### Key Files
+
+- `tmux/tmux.conf`: main configuration for theme, key bindings, status bar, and plugins
+- `tmux/tmux.remote.conf`: remote-session configuration for SSH-oriented workflows
+- `tmux/yank.sh`: clipboard helper supporting `pbcopy`, `xsel`, and OSC52 fallback
+- `tmux/renew_env.sh`: helper script for refreshing pane environment variables
 
 ## 🛠️ Troubleshooting
 
-### Colors not displaying correctly
-
-Ensure your terminal supports true color:
+### Colors are incorrect
 
 ```bash
 echo $TERM
-# Should be: xterm-256color, screen-256color, or tmux-256color
 ```
 
-### Clipboard not working on macOS
+Recommended values are `xterm-256color`, `screen-256color`, or `tmux-256color`.
 
-Install reattach-to-user-namespace:
+### Clipboard is not working on macOS
 
 ```bash
 brew install reattach-to-user-namespace
 ```
 
-### Plugins not loading
-
-Manually install plugins:
+### Plugins are not loading
 
 ```bash
 ~/.tmux/plugins/tpm/bin/install_plugins
 ```
 
-### Configuration not loading
-
-Reload configuration:
+### Changes do not take effect
 
 ```bash
 tmux source ~/.tmux.conf
 ```
 
-Or press `Ctrl+a Ctrl+r` inside tmux.
-
-## 📝 Files Structure
-
-```
-tmux-config/
-├── tmux/
-│   ├── tmux.conf          # Main configuration file
-│   ├── tmux.remote.conf   # Remote session configuration
-│   ├── yank.sh            # Clipboard integration script
-│   └── renew_env.sh       # Environment renewal script
-├── install.sh             # Automated installation script
-├── README.md              # Chinese documentation
-├── README_EN.md           # English documentation
-└── LICENSE                # License file
-```
-
-## 📜 License
-
-See [LICENSE](LICENSE) file for details.
-
-## 🙏 Credits
-
-This configuration is inspired by various tmux configurations from the community and uses:
-- [Catppuccin](https://github.com/catppuccin) for the beautiful theme
-- [TPM](https://github.com/tmux-plugins/tpm) for plugin management
+You can also run `Ctrl+a Ctrl+r` inside tmux.
 
 ## 🤝 Contributing
 
-Feel free to open issues or submit pull requests with improvements!
+Issues and pull requests are welcome. If you add user-facing behavior, please keep the companion docs site and the README links in sync.
+
+## 📜 License
+
+See [LICENSE](LICENSE).
